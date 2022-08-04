@@ -37,10 +37,10 @@
 ![微信截图_20220804124932](https://user-images.githubusercontent.com/71224625/182765549-d8552405-7339-4470-a658-a0dd285be5fa.png)
 
 # 青龙面板部署教程
--1. 上传本仓库的lexin.py到/ql/data/script/lexin/下
+- 1. 上传本仓库的lexin.py到/ql/data/script/lexin/下
 ![bc82cd2386f375e823013fd53fd2eb2](https://user-images.githubusercontent.com/71224625/182766073-2d9289ab-8be9-4e00-9067-8fbc8f8a5a23.jpg)
--2. 在青龙面板新建定时任务
+- 2. 在青龙面板新建定时任务
 ![18ab315fa3b36351edd20d9466f2a4d](https://user-images.githubusercontent.com/71224625/182766255-3e196405-41a8-41d8-8e81-da52f3eb90a0.jpg)
--3. 运行任务查看是否成功
+- 3. 运行任务查看是否成功
 ![微信截图_20220804164304](https://user-images.githubusercontent.com/71224625/182804145-e794f99f-b681-40ac-8f98-80ef89eec8ac.png)
 
