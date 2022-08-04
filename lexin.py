@@ -12,7 +12,7 @@ import time
 import random
 requests.packages.urllib3.disable_warnings
 
-msg_all = "乐心健康\n-------------------------------------------------\n"
+msg_all = "乐心健康\n\n"
 
 def md5(code):
     res=hashlib.md5()
