@@ -29,19 +29,27 @@
 - 4.回到App首页，点击我的->数据共享，绑定你想同步数据的项目
 - 5.在腾讯云函数新建空白模板
  <img src="https://user-images.githubusercontent.com/71224625/182764842-358e3d64-b8c8-46b7-a340-f7a3c9382e31.png"/>
+ 
 - 6.在函数代码处填入上传本仓库的lexin.py或将lexin.py中的代码复制到云函数中
    在代码最低端将自己注册的乐心健康账号密码填入相应的代码段中
       <p>----先点击部署----再点击运行----刷步成功</p>
  <img src="https://user-images.githubusercontent.com/71224625/182765394-b57055ec-24b0-4cf9-8a92-c20e66bcae89.jpg"/>
+ 
 - 7.运行成功后需要创建定时触发，使其每天自动刷步
  <img src="https://user-images.githubusercontent.com/71224625/182765549-d8552405-7339-4470-a658-a0dd285be5fa.png"/>
 
 ## 青龙面板部署教程
-- 1. 上传本仓库的lexin.py到/ql/data/script/lexin/下
-  <img src="https://user-images.githubusercontent.com/71224625/182766073-2d9289ab-8be9-4e00-9067-8fbc8f8a5a23.jpg"/>
-- 2. 在青龙面板新建定时任务
- <img src="https://user-images.githubusercontent.com/71224625/182766255-3e196405-41a8-41d8-8e81-da52f3eb90a0.jpg"/>
-- 3. 运行任务查看是否成功
- <img src="https://user-images.githubusercontent.com/71224625/182804145-e794f99f-b681-40ac-8f98-80ef89eec8ac.png"/>
- <img src=""/>
+- 1. 添加订阅管理
+  * 青龙v2.13.+
+  <img src="https://user-images.githubusercontent.com/71224625/182868238-e04d37d7-2a2f-44ed-897a-9e34d840e4c2.png"/>
 
+  * 青龙v2.13.0之前版本使用原始拉库方法
+  ```text
+  ql repo https://github.com/Wyatt323/lexin.git "lexin"
+  ```
+ 
+- 2. 在脚本中填入对应数据
+ <img src="https://user-images.githubusercontent.com/71224625/182869083-39d603b4-3e4c-4e94-99de-dbc8a63d1892.png"/>
+
+- 3. 运行任务查看是否成功
+ <img src="https://user-images.githubusercontent.com/71224625/182869737-ffed2ef0-a37c-4d00-9231-6651c2d2977e.png"/>
