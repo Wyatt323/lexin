@@ -11,6 +11,9 @@ import json
 import time
 import random
 requests.packages.urllib3.disable_warnings
+
+msg_all = "乐心健康\n-------------------------------------------------\n"
+
 def md5(code):
     res=hashlib.md5()
     res.update(code.encode("utf8"))
@@ -114,25 +117,31 @@ def execute_walk(phone,password,step):
     result=json.loads(update_result)["msg"]
     if result == '成功':
         msg = "刷新步数成功！此次刷取" + str(step) + "步。"
-        print(msg)
-        server_send(msg)
-        kt_send(msg)
+        print(msg_all + msg)
+        server_send(msg_all + msg)
+        kt_send(msg_all + msg)
+        tg_send(msg_all + msg)
     else:
         msg = "刷新步数失败！请查看云函数日志。"
-        print(msg)
-        server_send(msg)
-        kt_send(msg)
+        print(msg_all + msg)
+        server_send(msg_all + msg)
+        kt_send(msg_all + msg)
+        tg_send(msg_all + msg)
 
 def main():
     if phone and password and step != '':
         execute_walk(phone, password, step)
     else:
-        print("参数不全,请指定参数。或者在调用中直接指定参数")
+        msg = "未填写账号密码，请在脚本中填入。"
+        print(msg_all + msg)
+        server_send(msg_all + msg)
+        kt_send(msg_all + msg)
+        tg_send(msg_all + msg)
 
 # -- 配置 --
 # ------------------------------
-phone = '你的账号'  # 登陆账号
-password = '你的密码'  # 密码
+phone = ''  # 登陆账号
+password = ''  # 密码
 step = random.randint(19000,20000)  # 随机19000-20000步数
 sckey = ''  # server酱key(可空)
 ktkey = ''  # 酷推key(可空)
