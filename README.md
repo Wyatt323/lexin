@@ -18,29 +18,30 @@
 
 > ***您使用或者复制了本仓库且本人制作的任何脚本，则视为 `已接受` 此声明，请仔细阅读***
 
-# 前提说明
+## 前提说明
 乐心健康刷步，蚂蚁森林轻松每天296g能量（需要自己购买乐心手环，或自购手环sn码绑定）
 
-# 腾讯云函数部署教程
+## 腾讯云函数部署教程
 - 0.下载乐心健康APP：官方下载地址：http://www.lifesense.com/app/
 - 1.从应用商店下载乐心健康App，打开软件并选择手机号登录
 - 2.登录之后，点击我的->设置->账号与安全->设置密码(修改密码)，设置你自己记得住的密码
 - 3.绑定自己购买的手环也可以网上购买手环sn码进行绑定）
 - 4.回到App首页，点击我的->数据共享，绑定你想同步数据的项目
 - 5.在腾讯云函数新建空白模板
-![微信截图_20220804124151](https://user-images.githubusercontent.com/71224625/182764842-358e3d64-b8c8-46b7-a340-f7a3c9382e31.png)
+ <img src="https://user-images.githubusercontent.com/71224625/182764842-358e3d64-b8c8-46b7-a340-f7a3c9382e31.png"/>
 - 6.在函数代码处填入上传本仓库的lexin.py或将lexin.py中的代码复制到云函数中
--   在代码最低端将自己注册的乐心健康账号密码填入相应的代码段中
-   ----先点击部署----再点击运行----刷步成功
- ![40e49c038a4b9392853fb1586d293d3](https://user-images.githubusercontent.com/71224625/182765394-b57055ec-24b0-4cf9-8a92-c20e66bcae89.jpg)
+   在代码最低端将自己注册的乐心健康账号密码填入相应的代码段中
+      <p>----先点击部署----再点击运行----刷步成功</p>
+ <img src="https://user-images.githubusercontent.com/71224625/182765394-b57055ec-24b0-4cf9-8a92-c20e66bcae89.jpg"/>
 - 7.运行成功后需要创建定时触发，使其每天自动刷步
-![微信截图_20220804124932](https://user-images.githubusercontent.com/71224625/182765549-d8552405-7339-4470-a658-a0dd285be5fa.png)
+ <img src="https://user-images.githubusercontent.com/71224625/182765549-d8552405-7339-4470-a658-a0dd285be5fa.png"/>
 
-# 青龙面板部署教程
+## 青龙面板部署教程
 - 1. 上传本仓库的lexin.py到/ql/data/script/lexin/下
-* ![bc82cd2386f375e823013fd53fd2eb2](https://user-images.githubusercontent.com/71224625/182766073-2d9289ab-8be9-4e00-9067-8fbc8f8a5a23.jpg)
+  <img src="https://user-images.githubusercontent.com/71224625/182766073-2d9289ab-8be9-4e00-9067-8fbc8f8a5a23.jpg"/>
 - 2. 在青龙面板新建定时任务
-* ![18ab315fa3b36351edd20d9466f2a4d](https://user-images.githubusercontent.com/71224625/182766255-3e196405-41a8-41d8-8e81-da52f3eb90a0.jpg)
+ <img src="https://user-images.githubusercontent.com/71224625/182766255-3e196405-41a8-41d8-8e81-da52f3eb90a0.jpg"/>
 - 3. 运行任务查看是否成功
-* ![微信截图_20220804164304](https://user-images.githubusercontent.com/71224625/182804145-e794f99f-b681-40ac-8f98-80ef89eec8ac.png)
+ <img src="https://user-images.githubusercontent.com/71224625/182804145-e794f99f-b681-40ac-8f98-80ef89eec8ac.png"/>
+ <img src=""/>
 
