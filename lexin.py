@@ -1,4 +1,9 @@
 # -*- coding: utf8 -*-
+
+'''
+new Env('乐心刷步');
+'''
+
 import requests
 import hashlib
 import json
