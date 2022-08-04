@@ -102,6 +102,11 @@ def kt_send(msg):
     data = ('步数刷取完成，请查看详细信息~\n'+str(msg)).encode("utf-8")
     requests.post(kt_url, data=data)
 
+def tg_send(msg):
+   send_text = 'https://api.telegram.org/bot' + str(bot_token) + '/sendMessage?chat_id=' + str(bot_chatID) + '&parse_mode=Markdown&text=' + msg
+   response = requests.get(send_text)
+   return response.json()
+
 def execute_walk(phone,password,step):
     information=get_information(phone,password)
     bind(information)
@@ -131,6 +136,8 @@ password = '你的密码'  # 密码
 step = random.randint(19000,20000)  # 随机19000-20000步数
 sckey = ''  # server酱key(可空)
 ktkey = ''  # 酷推key(可空)
+bot_token = ''  #在https://t.me/BotFather中查看创建的机器人token(可空)
+bot_chatID = ''  #在https://t.me/getuseridbot中获取的userid(可空)
 # ------------------------------
 
 def main_handler(event, context):
