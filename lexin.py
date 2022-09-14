@@ -1,4 +1,4 @@
-# -*- coding: UTF-8 -*-
+# -*- coding: utf8 -*-
 
 '''
 cron: 48 10,15 * * *
